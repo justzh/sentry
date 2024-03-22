@@ -465,7 +465,7 @@ class CreateAlertRuleTest(TestCase, BaseIncidentsTest):
         # TODO: backfill projects so all monitor_types include 'projects' fk
         for monitor_type, expected_projects in [
             (None, 0),
-            (AlertRuleMonitorType.CONTINUOUS, 0),
+            (AlertRuleMonitorType.CONTINUOUS, 1),
             (AlertRuleMonitorType.ACTIVATED, 1),
         ]:
             name = "hello"
