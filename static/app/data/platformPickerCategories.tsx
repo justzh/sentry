@@ -146,6 +146,7 @@ export const createablePlatforms: Set<PlatformKey> = new Set([
   ...mobile,
   ...desktop,
   ...serverless,
+  'nintendo', // Nintendo is a platform created by 3rd party and doesn't fit in any of the above categories
 ]);
 
 /**
